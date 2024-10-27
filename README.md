@@ -1,29 +1,28 @@
 # Causal Entropic Forces
 
-TODO: Investingate discounting.
+An attempt to reimplement the particle in a box experiment as described in Fig.2a of [Wissner-Gross & Freer, 2013](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf) and pages 2-3 and 10-11 of [supplementary material](https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.110.168702).
 
-Reimplementation of [Causal Entropic Forces](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf), bolstered by pseudocode and equations in [supplementary material](https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.110.168702).
+The code in its current state does not reproduce the experiment reliably.
 
-The algorithm is able to find policies unsupervised from an environment, provided it can interact with the environment beforehand. To do this, it iteratively finds the next best move it can take, represented in the below diagrams by the thick black arrow.
+The agent in the experiment runs on an algorithm that three repeating steps.
 
-First, it generates random walks throughout the environment to sample the evolution of the environment and agent.
+1. Generate random walks throughout the environment from a start state.
 ![lightCone2D](https://raw.githubusercontent.com/dyth/causalEntropicForces/secondImplementation/images/particleBoxLightCone2D.png)
 
-For each destination the random walks end, the algorithm computes the likelihood (conditional probability density) that the system will evolve to that particular destination. Then, a weighted average of all first steps are taken with this likelihood to find the step that maximises the number of potential futures.
+2. Use kernel density estimation to compute the likelihood of visiting a future state at the end of a random walk given the start state.
 ![path](https://raw.githubusercontent.com/dyth/causalEntropicForces/secondImplementation/images/density.png)
 
-The first 50 steps are here expressed as a light cone.
-![paths](https://raw.githubusercontent.com/dyth/causalEntropicForces/secondImplementation/images/particleBoxLightCone.png)
+3. Update the start state to a new state in the direction towards the most-likely visited future state (given by black arrow).  As seen in the diagram above, the black arrow actually goes against the expected direction in the experiment, so there's an error with the code at the moment.
 
-## Prerequisites
+## Installation
 
-Python libraries: `numpy`, `matplotlib`, `scipy`
+Python 2.7 with the `numpy`, `matplotlib`, `scipy` libraries.
 
 ```
 $ pip install numpy matplotlib scipy
 ```
 
-## Run current version
+## Run
 
 Properties of the agent can be specified in `config.json`.
 
@@ -42,6 +41,3 @@ To design your own environment, ensure that it contains the same methods and var
 ```
 $ python agent.py
 ```
-
-## History
-For more code and other derivative agents, download the v0.5 release
