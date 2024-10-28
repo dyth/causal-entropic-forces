@@ -2,7 +2,7 @@
 
 An attempt to reimplement the particle in a box experiment as described in Fig.2a of [Wissner-Gross & Freer, 2013](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf) and pages 2-3 and 10-11 of [supplementary material](https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.110.168702).
 
-The code in its current state does not reproduce the experiment reliably.
+The code in its current state cannot reproduce the experiment reliably.
 
 The agent in the experiment runs on an algorithm that three repeating steps.
 
