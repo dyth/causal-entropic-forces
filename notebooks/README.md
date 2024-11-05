@@ -8,6 +8,10 @@ conda activate entropica
 pip install notebook==7.2.2 ipython==8.29.0 numpy==2.1.2 matplotlib==3.9.2 scipy==1.14.1
 ```
 
+```commandline
+nohup jupyter notebook > log.txt 2>&1 &
+```
+
 ## References
 
 1. Causal Entropic Forces [[Wissner-Gross & Freer, 2013a]](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf).
