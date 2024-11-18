@@ -9,13 +9,14 @@ I am not sure why and would welcome any help!
 Currently, the particle-in-a-box behaves as below and does not move
 towards the center of the plot.
 
-![lightCone2D](https://raw.githubusercontent.com/dyth/causalEntropicForces/secondImplementation/images/particle.png)
+![particle](https://raw.githubusercontent.com/dyth/causalEntropicForces/secondImplementation/images/particle.png)
 
 The algorithm works first by generating many random-walk paths through
 the state-space -- here is a "light cone" plot of these random walks with
 time on the vertical axis.
 
-![path](https://raw.githubusercontent.com/dyth/causalEntropicForces/secondImplementation/images/lightcone.png)
+[//]: # (edited from https://stackoverflow.com/a/14747656)
+<img src="https://raw.githubusercontent.com/dyth/causalEntropicForces/secondImplementation/images/lightcone.png" width="512" class="center"/>
 
 I then perform PCA to reduce the dimensionality of the array formed from
 concatenating the states of the random walk through time, and then perform
@@ -41,7 +42,11 @@ pip install notebook==7.2.2 ipython==8.29.0 numpy==2.1.2 matplotlib==3.9.2 scipy
 [//]: # (nohup jupyter notebook > log.txt 2>&1 &)
 [//]: # (```)
 
+
 ## References
+
+I highly recommend reading the following sources that helped me to
+better understand this interesting work.
 
 1. Causal Entropic Forces [[Wissner-Gross & Freer, 2013a]](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf).
 2. Supplementary Material to Causal Entropic Forces [[Wissner-Gross & Freer, 2013b]](https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.110.168702).
