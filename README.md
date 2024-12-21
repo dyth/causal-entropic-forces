@@ -42,6 +42,11 @@ pip install notebook==7.2.2 ipython==8.29.0 numpy==2.1.2 matplotlib==3.9.2 scipy
 [//]: # (nohup jupyter notebook > log.txt 2>&1 &)
 [//]: # (```)
 
+A nice way to run the jupyter notebook from a remote server is using the command
+```commandline
+nohup jupyter notebook --no-browser --ip 0.0.0.0 &
+```
+
 
 ## References
 
