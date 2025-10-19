@@ -33,7 +33,7 @@ material.
 ## Installation
 
 ```commandline
-conda create --name entropica python=3.12
+conda create --name entropica python=3.13.4
 conda activate entropica
 pip install notebook==7.2.2 ipython==8.29.0 numpy==2.1.2 matplotlib==3.9.2 scipy==1.14.1
 ```
