@@ -6,8 +6,7 @@ in Fig.2a of [Wissner-Gross & Freer, 2013](http://math.mit.edu/~freer/papers/Phy
 The code does not work.
 I am not sure why and would welcome any help!
 
-The particle-in-a-box does not move
-towards the center of the plot.
+The particle-in-a-box does not move towards the center of the plot.
 
 ![particle](https://raw.githubusercontent.com/dyth/causalEntropicForces/secondImplementation/images/particle.png)
 
