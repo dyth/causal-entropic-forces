@@ -11,7 +11,7 @@ towards the center of the plot.
 
 ![particle](https://raw.githubusercontent.com/dyth/causalEntropicForces/secondImplementation/images/particle.png)
 
-See `tutorial.ipynb`
+See `tutorial.ipynb`.
 
 
 
