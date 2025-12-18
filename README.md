@@ -1,11 +1,12 @@
 # Causal Entropic Forces
 
-_Causal Entropic Forces_ [[Wissner-Gross & Freer, 2013a]](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf) is a 2013 paper by [Alexander Wissner-Gross](https://www.alexwg.org/) and [Cameron Freer](https://www.cfreer.org/). The paper describes an agent that acts to maximize causal entropy—a measure of the diversity of futures in an agent-environment system. The authors show that agents exhibit tool-use behavior and multi-agent cooperation from maximizing the diversity of futures, and argue that maximizing causal entropy mathematically formalizes the word "intelligence".
+_Causal Entropic Forces_ [[Wissner-Gross & Freer, 2013a]](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf) is a 2013 paper by [Alexander Wissner-Gross](https://www.alexwg.org/) and [Cameron Freer](https://www.cfreer.org/). The paper describes an agent that acts to maximize causal entropy: a measure of the diversity of futures in an agent-environment system. The authors argue that such behavior mathematically formalizes the word "intelligence"—and justify their argument with computer simulations showing that intelligent behaviors of tool use and multi-agent cooperation emerge from maximizing causal entropy.
 
 This repository reimplements the simplest experiment (the particle in a box) in _Causal Entropic Forces_ [[2013a, Fig.2a](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf), [2013b, pp. 2-3, 10–11](https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.110.168702)]. Under causal entropic forcing, a particle in a box begins to move towards the center of the plot (I have not ran the simulation for sufficiently long timesteps for it to reach the center—the following plot took ~2 hours to generate on my laptop):
 
 ![particle](https://raw.githubusercontent.com/dyth/causal-entropic-forces/refs/heads/main/images/towards_center.png)
 
+See https://github.com/dyth/causal-entropic-forces/blob/main/tutorial.ipynb for more details.
 
 
 ## Installation
