@@ -6,15 +6,17 @@ This repository reimplements the simplest experiment (the particle in a box) in 
 
 ![particle](https://raw.githubusercontent.com/dyth/causal-entropic-forces/refs/heads/main/images/towards_center.png)
 
-See https://github.com/dyth/causal-entropic-forces/blob/main/tutorial.ipynb for more details.
+See https://github.com/dyth/causal-entropic-forces/blob/main/tutorial.ipynb for a detailed tutorial about the mathematics.
+
+See https://github.com/dyth/causal-entropic-forces/blob/main/just_code_tutorial.ipynb for a high-level tutorial that givs some intuitions about the code.
 
 
 ## Installation
 
 ```commandline
-conda create --name entropica python=3.13.4
+conda create --name entropica python=3.14.7
 conda activate entropica
-pip install notebook==7.2.2 ipython==8.29.0 numpy==2.1.2 matplotlib==3.9.2 scipy==1.14.1
+pip install notebook==7.6.2 ipython==9.17.1 numpy==2.5.3 matplotlib==3.11.2 scipy==1.18.1
 ```
 
 A nice way to run the jupyter notebook from a remote server is
