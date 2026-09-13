@@ -163,3 +163,4 @@ cython_debug/
 
 *.pyc
 *.vscode
+*.DS_Store
