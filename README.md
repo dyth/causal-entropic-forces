@@ -17,15 +17,15 @@ See https://github.com/dyth/causal-entropic-forces/blob/main/jax_cef_code_tutori
 ```commandline
 conda create --name entropica python=3.14.7
 conda activate entropica
-pip install notebook==7.6.2 ipython==9.17.1 numpy==2.5.3 matplotlib==3.11.2 scipy==1.18.1 ipympl==0.10.0
+pip install --requirement requirements.txt
 ```
 
-To run the JAX notebook, JAX needs to be installed:
+Then install JAX. My version is
 ```commandline
 pip install jax=0.10.2
 ```
 
-On MacOS, `jax-mps` (https://github.com/tillahoffmann/jax-mps) speeds up JAX execution.
+and I also used `jax-mps` (https://github.com/tillahoffmann/jax-mps) to speed up JAX execution
 ```commandline
 pip install jax-mps==0.10.11
 ```
@@ -33,9 +33,4 @@ pip install jax-mps==0.10.11
 Test the JAX installation with
 ```
 python -c "import jax; print(jax.default_backend())"
-```
-
-A nice way to run the jupyter notebook from a remote server is
-```commandline
-nohup jupyter notebook --no-browser --ip 0.0.0.0 &
 ```
