@@ -31,6 +31,6 @@ pip install jax-mps==0.10.11
 ```
 
 Test the JAX installation with
-```
+```commandline
 python -c "import jax; print(jax.default_backend())"
 ```
