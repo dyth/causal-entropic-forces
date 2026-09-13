@@ -38,3 +38,5 @@ A nice way to run the jupyter notebook from a remote server is
 ```commandline
 nohup jupyter notebook --no-browser --ip 0.0.0.0 &
 ```
+
+<!-- ![Simulation](https://raw.githubusercontent.com/dyth/causal-entropic-forces/refs/heads/main/images/scatter.gif) -->
