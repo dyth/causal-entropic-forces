@@ -16,7 +16,7 @@ See https://github.com/dyth/causal-entropic-forces/blob/main/just_code_tutorial.
 ```commandline
 conda create --name entropica python=3.14.7
 conda activate entropica
-pip install notebook==7.6.2 ipython==9.17.1 numpy==2.5.3 matplotlib==3.11.2 scipy==1.18.1
+pip install notebook==7.6.2 ipython==9.17.1 numpy==2.5.3 matplotlib==3.11.2 scipy==1.18.1 ipympl==0.10.0
 ```
 
 To run the JAX notebook, JAX needs to be installed:
