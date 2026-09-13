@@ -2,7 +2,7 @@
 
 _Causal Entropic Forces_ [[Wissner-Gross & Freer, 2013a]](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf) is a 2013 paper by [Alexander Wissner-Gross](https://www.alexwg.org/) and [Cameron Freer](https://www.cfreer.org/). The paper describes an agent that acts to maximize causal entropy: a measure of the diversity of futures in an agent-environment system. The authors argue that such behavior mathematically formalizes the word "intelligence." They justify their argument with computer simulations showing that intelligent behaviors of tool use and multi-agent cooperation emerge from maximizing causal entropy.
 
-This repository reimplements the simplest experiment (the particle in a box) in _Causal Entropic Forces_ [[2013a, Fig.2a](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf), [2013b, pp. 2-3, 10–11](https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.110.168702)]. Under causal entropic forcing, a particle in a box begins to move towards the center of the plot (I have not ran the simulation for sufficiently long timesteps for it to reach the center—the following plot took ~2 hours to generate on my laptop):
+This repository reimplements the simplest experiment (the particle in a box) in _Causal Entropic Forces_ [[2013a, Fig.2a](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf), [2013b, pp. 2-3, 10–11](https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.110.168702)]. Under causal entropic forcing, a particle in a box moves towards the center of the box (I have not ran the simulation for sufficiently long timesteps for it to reach the center—the following plot took ~2 hours to generate on my laptop):
 
 ![particle](https://raw.githubusercontent.com/dyth/causal-entropic-forces/refs/heads/main/images/towards_center.png)
 
@@ -21,12 +21,12 @@ pip install notebook==7.6.2 ipython==9.17.1 numpy==2.5.3 matplotlib==3.11.2 scip
 
 To run the JAX notebook, JAX needs to be installed:
 ```commandline
-pip install -U jax
+pip install jax=0.10.2
 ```
 
 On MacOS, `jax-mps` (https://github.com/tillahoffmann/jax-mps) speeds up JAX execution.
 ```commandline
-pip install jax-mps
+pip install jax-mps==0.10.11
 ```
 
 Test the JAX installation with
