@@ -19,6 +19,21 @@ conda activate entropica
 pip install notebook==7.6.2 ipython==9.17.1 numpy==2.5.3 matplotlib==3.11.2 scipy==1.18.1
 ```
 
+To run the JAX notebook, JAX needs to be installed:
+```commandline
+pip install -U jax
+```
+
+On MacOS, `jax-mps` (https://github.com/tillahoffmann/jax-mps) speeds up JAX execution.
+```commandline
+pip install jax-mps
+```
+
+Test the JAX installation with
+```
+python -c "import jax; print(jax.default_backend())"
+```
+
 A nice way to run the jupyter notebook from a remote server is
 ```commandline
 nohup jupyter notebook --no-browser --ip 0.0.0.0 &
