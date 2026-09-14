@@ -4,8 +4,8 @@ _Causal Entropic Forces_ [[Wissner-Gross & Freer, 2013a]](http://math.mit.edu/~f
 
 This repository reimplements the simplest experiment (the particle in a box) in _Causal Entropic Forces_ [[2013a, Fig.2a](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf), [2013b, pp. 2-3, 10–11](https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.110.168702)]. Under causal entropic forcing, a particle in a box (begins to) move towards the center of the box (more recent positions are shown in darker colors):
 
-![particle](https://raw.githubusercontent.com/dyth/causal-entropic-forces/refs/heads/main/images/towards_center.png)
-<!-- ![Simulation](https://raw.githubusercontent.com/dyth/causal-entropic-forces/refs/heads/main/images/particle-in-a-box.gif) -->
+<!-- ![particle](https://raw.githubusercontent.com/dyth/causal-entropic-forces/refs/heads/main/images/towards_center.png) -->
+![particle animation](https://raw.githubusercontent.com/dyth/causal-entropic-forces/refs/heads/main/images/particle-in-a-box.gif)
 
 See https://github.com/dyth/causal-entropic-forces/blob/main/tutorial.ipynb for a detailed tutorial about the mathematics.
 
