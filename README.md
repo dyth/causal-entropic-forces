@@ -6,7 +6,7 @@ This repository reimplements the simplest experiment in _Causal Entropic Forces_
 
 ![particle animation](https://raw.githubusercontent.com/dyth/causal-entropic-forces/refs/heads/main/images/particle-in-a-box.gif)
 
-The authors argue that an unintelligent particle in a box will undergo a random walk. But an intelligent particle will move towards the center of the box. By doing so, the particle maximizes the diversity of its futures. If the particle is closer to the center, it has better access to any position in the box that it might wish to occupy in the future.
+The authors argue that an unintelligent particle in a box has the motion described by a random walk, while an intelligent particle will move towards the center of the box. The authors argue that moving to the center is intelligent. For being closer to the center gives the particle quicker access to any position in the box that it might wish to occupy in the future.
 
 Here's how the algorithm works:
 1. From the current position, sample many random walks.
