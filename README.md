@@ -2,10 +2,12 @@
 
 _Causal Entropic Forces_ [[Wissner-Gross & Freer, 2013a]](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf) is a 2013 paper by [Alexander D. Wissner-Gross](https://www.alexwg.org/) and [Cameron Freer](https://www.cfreer.org/). The paper describes an agent that acts to maximize causal entropy: a measure of the diversity of futures in an agent-environment system. The authors argue that such behavior mathematically formalizes the word "intelligence." They justify their argument with computer simulations showing that intelligent behaviors of tool use and multi-agent cooperation emerge from maximizing causal entropy.
 
-This repository reimplements the simplest experiment (the particle in a box) in _Causal Entropic Forces_ [[2013a, Fig.2a](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf), [2013b, pp. 2-3, 10–11](https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.110.168702)]. Under causal entropic forcing, a particle in a box (begins to) move towards the center of the box (more recent positions are shown in darker colors):
+This repository reimplements the simplest experiment (the particle in a box) in _Causal Entropic Forces_ [[2013a, Fig.2a](http://math.mit.edu/~freer/papers/PhysRevLett_110-168702.pdf), [2013b, pp. 2-3, 10–11](https://journals.aps.org/prl/supplemental/10.1103/PhysRevLett.110.168702)]. Under causal entropic forcing, a particle in a box moves towards the center of the box, as shown by the following animation (more recent positions are shown in darker colors):
 
 <!-- ![particle](https://raw.githubusercontent.com/dyth/causal-entropic-forces/refs/heads/main/images/towards_center.png) -->
 ![particle animation](https://raw.githubusercontent.com/dyth/causal-entropic-forces/refs/heads/main/images/particle-in-a-box.gif)
+
+The authors argue that moving to the center of the box is intelligent behavior. For it is easier to access any position in the box from the center than from anywhere else in the box.
 
 See https://github.com/dyth/causal-entropic-forces/blob/main/tutorial.ipynb for a detailed tutorial about the mathematics.
 
